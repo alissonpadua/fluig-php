@@ -2,5 +2,8 @@
 
 require __DIR__. '/../vendor/autoload.php';
 
-$api = new \AlissonPadua\Service\ApiAuthService;
-echo $api->hello();
+$env = new \Symfony\Component\Dotenv\Dotenv;
+
+$env->load(__DIR__. '/../.env');
+
+echo getenv('FLUIG_CONSUMER_KEY');

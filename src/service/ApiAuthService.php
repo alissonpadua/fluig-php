@@ -4,7 +4,7 @@ namespace AlissonPadua\Service;
 
 class ApiAuthService
 {
-    
+
     public function loginWithUser(){
 
     }
