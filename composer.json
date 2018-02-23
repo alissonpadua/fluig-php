@@ -1,0 +1,21 @@
+{
+    "name": "alisson-padua/fluig-php",
+    "description": "Integrador para o Fluig-TOTVS, permite consultar vários serviços de forma simplificada\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dda plataforma de forma simplificada\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dconsumir",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alisson Pde Pádua",
+            "email": "alisson@minasul.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AlissonPadua\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.2.2",
+        "symfony/dotenv": "^4.0"
+    }
+}
