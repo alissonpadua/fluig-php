@@ -9,5 +9,14 @@ $env->load(__DIR__. '/../.env');
 echo getenv('FLUIG_CONSUMER_KEY');
 */
 
-$cons = new \AlissonPadua\Model\Constraint;
-$cons->setType('MUST');
+$dataset = new \AlissonPadua\Model\Dataset;
+$c1 = new \AlissonPadua\Model\Constraint;
+
+$c1->setField("nome_colaborador");
+$c1->setInitialValue("100");
+$c1->setFinalValue("200");
+$c1->setType("MUST_NOT");
+
+$dataset->addConstraint($c1);
+
+var_dump($dataset->getListConstraints());
