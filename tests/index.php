@@ -13,5 +13,6 @@ $c1 = new \AlissonPadua\Model\Constraint('nome_colaborador', '100', '200', 'MUST
 $dataset->addConstraint($c1);
 var_dump($dataset->getListConstraints());*/
 
-$oatuh = new AlissonPadua\Service\OauthService;
-$oatuh->parseDotenv();
+$cli = new \AlissonPadua\PhpFluig\Service\ApiClientService;
+$json = $cli->get('api/public/social/user/logged');
+echo $json;

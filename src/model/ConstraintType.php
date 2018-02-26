@@ -1,6 +1,6 @@
 <?php
 
-namespace AlissonPadua\Model;
+namespace AlissonPadua\PhpFluig\Model;
 
 class ConstraintType
 {

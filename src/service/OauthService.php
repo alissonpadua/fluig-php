@@ -1,22 +1,20 @@
 <?php
 
-namespace AlissonPadua\Service;
+namespace AlissonPadua\PhpFluig\Service;
 
-use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Subscriber\Oauth\Oauth1;
-use Symfony\Component\Dotenv\Dotenv;
+use AlissonPadua\PhpFluig\Service\HandlerDotenv;
 
 class OauthService
 {
     private $stack = null;
-    private $env;
-
-    public function __constructor(){
-        $this->parseDotenv();
-    }
-
+    use HandlerDotenv;
+    
     public function getApiAuth(){
+        
+        $this->parseDotenv();
+
         try{
 			$this->stack = HandlerStack::create();
 	   		$middleware = new Oauth1([
@@ -35,8 +33,4 @@ class OauthService
 		return $this->stack;
     }
 
-    public function parseDotenv(){
-        $this->env = new Dotenv;
-        $this->env->load(__DIR__. '/../../.env');
-    }
 }

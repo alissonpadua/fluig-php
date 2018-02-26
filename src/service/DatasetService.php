@@ -1,6 +1,6 @@
 <?php
 
-namespace AlissonPadua\Service;
+namespace AlissonPadua\PhpFluig\Service;
 
 class DatasetService
 {
