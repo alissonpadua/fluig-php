@@ -16,6 +16,8 @@
     },
     "require": {
         "php": ">=7.2.2",
-        "symfony/dotenv": "^4.0"
+        "symfony/dotenv": "^4.0",
+        "guzzlehttp/guzzle": "^6.2",
+        "guzzlehttp/oauth-subscriber": "^0.3.0"
     }
 }
