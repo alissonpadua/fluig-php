@@ -14,5 +14,5 @@ $dataset->addConstraint($c1);
 var_dump($dataset->getListConstraints());*/
 
 $cli = new \AlissonPadua\PhpFluig\Service\ApiClientService;
-$json = $cli->get('api/public/social/user/logged');
+$json = $cli->post();
 echo $json;
