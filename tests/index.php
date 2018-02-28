@@ -13,6 +13,11 @@ $c1 = new \AlissonPadua\Model\Constraint('nome_colaborador', '100', '200', 'MUST
 $dataset->addConstraint($c1);
 var_dump($dataset->getListConstraints());*/
 
-$cli = new \AlissonPadua\PhpFluig\Service\ApiClientService;
-$json = $cli->post();
+$dataset = new \AlissonPadua\PhpFluig\Model\Dataset;
+$datasetService = new \AlissonPadua\PhpFluig\Service\DatasetService;
+
+$dataset->setName("buscarTodosCooperados");
+
+$json = $datasetService->getDataset($dataset);
+
 echo $json;

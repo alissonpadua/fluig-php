@@ -4,10 +4,10 @@ namespace AlissonPadua\PhpFluig\Model;
 
 class Dataset
 {
-    private $name;
-    private $listFields = array();
-    private $listConstraints = array();
-    private $order = array();
+    public $name;
+    public $listFields =null;
+    public $listConstraints = null;
+    public $order = null;
 
     public function setName(String $n){
         $this->name = $n;
@@ -23,9 +23,5 @@ class Dataset
 
     public function addOrder(String $order){
         array_push($this->order, $order);
-    }
-
-    public function getListConstraints(){
-        return $this->listConstraints;
     }
 }
