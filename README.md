@@ -1,9 +1,36 @@
-## LIB para facilitar a integração Fluig-TOTVS com PHP
+## LIB para facilitar a integração Fluig-TOTVS em PHP
 
-Em desenvolvimento
+LIB para integração via REST com FLUIG-TOTVS utilizando PHP.
 
-Renomeie o arquivo .env-sample para .env e mude os valores de acordo com seu Fluig
+No momento é possivel apenas conusltar um dataset, seja interno ou customizado. Você pode passar as Constraints, Fields ou order se necessário.
+
+### Como usar
+
+- Primeiro instale a biblioteca
 
  ```bash
-composer update
+composer require alissonpadua/fluig-php
  ```
+- Depois crie o OAuth App e OAth Provider no fluig. Em seguida, clique em usar aplicativo para gerar os tokens de acesso.
+- Na LIB, renomeie o arquivo .env-sample para .env e mude os valores de acordo com seu Fluig
+
+### Código de básico exemplo
+
+```php
+<?php
+
+require __DIR__. '/../vendor/autoload.php';
+
+$dataset = new \AlissonPadua\PhpFluig\Model\Dataset;
+$datasetService = new \AlissonPadua\PhpFluig\Service\DatasetService;
+
+
+$dataset->setName("colleague");
+$json = $datasetService->getDataset($dataset);
+print_r($json);
+```
+
+### Em desenvolvimento...
+
+- Algoritimo para realizar CRUD em qualquer Dataset
+- Upload de arquivos para o GED
