@@ -30,6 +30,11 @@ $json = $datasetService->getDataset($dataset);
 print_r($json);
 ```
 
+### Dependência
+
+ - Fluig 1.5+
+ - PHP 7+
+
 ### Em desenvolvimento...
 
 - Algoritimo para realizar CRUD em qualquer Dataset
