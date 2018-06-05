@@ -14,7 +14,7 @@ composer require alissonpadua/fluig-php
 - Depois crie o OAuth App e OAth Provider no fluig. Em seguida, clique em usar aplicativo para gerar os tokens de acesso.
 - Na LIB, renomeie o arquivo .env-sample para .env e mude os valores de acordo com seu Fluig
 
-### Código básico de exemplo
+### Código de básico exemplo
 
 ```php
 <?php
