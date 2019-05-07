@@ -36,6 +36,6 @@ print_r($json);
  - PHP 7+
 
 ### Em desenvolvimento...
-
+- Versão 1.0
 - Algoritimo para realizar CRUD em qualquer Dataset
 - Upload de arquivos para o GED
